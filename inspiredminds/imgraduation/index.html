@@ -1,351 +1,457 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Emaus | Saas Landing</title>
+    <title>IM Graduation - InspiredMinds </title>
 
-  <meta charset="utf-8">
-  <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="">
-  
-  <!-- Google Fonts -->
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700%7CLato:300,400,400i,700' rel='stylesheet'>
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="InspiredMemories LLP">
+    <meta name="description" content="IM Graduation is an Educational Course concept for every children where it starts from their 1st grade classes till their success in life. We support them towards their passion">
 
-  <!-- Css -->
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/font-icons.css" />
-  <link rel="stylesheet" href="css/style.css" />
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700%7CLato:300,400,400i,700' rel='stylesheet'>
 
-  <!-- Favicons -->
-  <link rel="shortcut icon" href="img/favicon.ico">
-  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    <!-- Css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-icons.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#6acfa8">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#6acfa8">
 
 </head>
 
-<body>
+<body data-spy="scroll" data-offset="60" data-target=".nav__holder">
 
-  <!-- Preloader -->
-  <div class="loader-mask">
-    <div class="loader">
-      "Loading..."
+    <!-- Preloader -->
+    <div class="loader-mask">
+        <div class="loader">
+            "Loading..."
+        </div>
     </div>
-  </div>
 
-  <main class="main-wrapper">
-
-    <!-- Navigation -->
-    <header class="nav nav--transparent">
-
-      <div class="nav__holder" id="sticky-nav">
-        <div class="container">
-          <div class="flex-parent">
-
-            <div class="nav__header clearfix">
-              <!-- Logo -->
-              <div class="logo-wrap">
-                <a href="index.html" class="logo__link">
-                  <img class="logo logo--dark" src="img/logo_dark.png" alt="logo">
-                  <img class="logo logo--light" src="img/logo_light.png" alt="logo">
-                </a>
-              </div>
-
-              <button type="button" class="nav__icon-toggle" id="nav__icon-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="nav__icon-toggle-bar"></span>
-                <span class="nav__icon-toggle-bar"></span>
-                <span class="nav__icon-toggle-bar"></span>
-              </button>
-            </div> <!-- end nav-header -->
-
-            <nav id="navbar-collapse" class="nav__wrap collapse navbar-collapse">              
-              <ul class="nav__menu nav__menu--inline">
-
-                <li class="nav__dropdown active">
-                  <a href="index.html">Home</a>
-                  <i class="ui-arrow-down nav__dropdown-trigger"></i>
-                  <ul class="nav__dropdown-menu">
-                    <li><a href="index.html">Saas Landing</a></li>
-                    <li><a href="index-2.html">Mobile App</a></li>
-                    <li><a href="index-3.html">eBook Landing</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="features.html">Features</a>
-                </li>
-                <li>
-                  <a href="pricing.html">Pricing</a>
-                </li>
-                <li>
-                  <a href="icons.html">Icons</a>
-                </li>
-                <li>
-                  <a href="knowledge-base.html">Knowledge Base</a>
-                </li>            
-
-              </ul> <!-- end menu -->
-
-              <div class="nav__btn-holder">
-                <a href="#" class="btn btn--sm btn--color rounded"><span>Sign Up</span></a>
-              </div>
-            </nav> <!-- end nav-wrap -->         
-        
-          </div> <!-- end flex-parent -->
-        </div> <!-- end container -->
-
-      </div>
-    </header> <!-- end navigation -->
+    <main class="main-wrapper">
 
 
-    <div class="content-wrapper oh">
+        <!-- Navigation -->
+        <header class="nav nav--sticky-on-mobile" id="home">
 
-      <!-- Hero -->
-      <section class="hero bg-img bg-gradient white-text" style="background-image: url(img/hero/hero_1.jpg);">
+            <div class="nav__holder" id="sticky-nav">
+                <div class="container">
+                    <div class="flex-parent">
 
-        <div class="container  hero__container container-full-height">
+                        <div class="nav__header clearfix">
+                            <!-- Logo -->
+                            <div class="logo-wrap local-scroll">
+                                <a href="#home" class="logo__link">
+                                    <img class="logo logo--dark" src="../img/logod.png" alt="logo">
+                                </a>
+                            </div>
 
-          <div class="row hero__outer flex-vertical-align-center">
-            <div class="col-md-5">
-              <h1 class="hero__title hero--boxed">New platform for managing your business expenses</h1>
-              <div class="hero__btn-holder mt-30">
-                <a href="#" class="btn btn--lg btn--color rounded"><span>Try it Now</span></a>
-                <div class="play-btn__wrap">
-                  <a href="https://www.youtube.com/watch?v=nVzVohG304A?autoplay=1" class="play-btn play-btn--sm play-btn--white single-video-lightbox"></a>
-                  <span class="play-btn__text">How it Works</span>
-                </div>                
-              </div>                  
-            </div>
-            <div class="col-md-7 text-right hidden-sm hidden-xs">
-              <img src="img/hero/app.png" class="mt-100" alt="">
-            </div>
-          </div>              
-         
-        </div>
-      </section> <!-- end hero -->
-
-      <!-- Partners -->
-      <section class="partners text-center bottom-divider">
-        <div class="container">
-          <div class="row">
-
-            <div class="col-sm-5ths col-xs-3 col-xxs-6">
-              <a href="#">
-                <img src="img/partners/partner_logo_dark_1.png" alt="">
-              </a>
-            </div>
-            <div class="col-sm-5ths col-xs-3 col-xxs-6">
-              <a href="#">
-                <img src="img/partners/partner_logo_dark_2.png" alt="">
-              </a>
-            </div>
-            <div class="col-sm-5ths col-xs-3 col-xxs-6">
-              <a href="#">
-                <img src="img/partners/partner_logo_dark_3.png" alt="">
-              </a>
-            </div>
-            <div class="col-sm-5ths col-xs-3 col-xxs-6">
-              <a href="#">
-                <img src="img/partners/partner_logo_dark_4.png" alt="">
-              </a>
-            </div>
-
-            <div class="col-sm-5ths hidden-xs">
-              <a href="#">
-                <img src="img/partners/partner_logo_dark_5.png" alt="">
-              </a>
-            </div>
-            
-          </div>
-        </div>
-      </section> <!-- end partners -->
+                            <button type="button" class="nav__icon-toggle" id="nav__icon-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="nav__icon-toggle-bar"></span>
+                                <span class="nav__icon-toggle-bar"></span>
+                                <span class="nav__icon-toggle-bar"></span>
+                            </button>
+                        </div>
+                        <!-- end nav-header -->
 
 
-      <!-- Intro -->
-      <section class="section-wrap bottom-divider">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-center">
-              <span class="intro__subtitle uppercase">Create. Visualize. Deploy</span>
-              <h2 class="intro__title">
-                An idea that takes the parts of a structure and turns them into a whole system. Practice is the frequent and continued contemplation of the mode of executing any given work, or of the mere operation.
-              </h2>
-            </div>
-          </div>
-        </div>        
-      </section> <!-- end intro -->
+                        <nav id="navbar-collapse" class="nav__wrap collapse navbar-collapse">
+                            <ul class="nav__menu nav__menu--inline local-scroll" id="onepage-nav">
+                                <li>
+                                    <a href="#features">Documentation</a>
+                                </li>
+                                <li>
+                                    <a href="../club/index.html">Minds Club</a>
+                                </li>
+                                <li>
+                                    <a href="../workspace/index.html">Minds Workspace</a>
+                                </li>
+                                <li>
+                                    <a href="../index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html">Back to Main Site</a>
+                                </li>
+                            </ul>
+                            <!-- end menu -->
 
-      <!-- Promo Section -->
-      <section class="section-wrap promo-section bottom-divider pb-100">
-        <div class="container ">
-          <div class="row flex-parent flex-vertical-align-center flex-sm-collapse">
-            <div class="col-md-6 col-sm-12 col-xs-12">
-              <img src="img/promo/1.jpg" alt="" class="promo-section__img">
-              <a href="https://www.youtube.com/watch?v=nVzVohG304A?autoplay=1" class="play-btn play-btn--center icon-wave single-video-lightbox"></a>
-            </div>
-            <div class="col-md-5 col-md-offset-1 col-sm-12">
-              <div class="promo-section__description">
-                <h2 class="promo-section__title">Intuitive interface for collaboration</h2>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-              </div>
-            </div>
-          </div>
-        </div> 
-      </section> <!-- end promo section -->
-
-      <!-- Promo Section -->
-      <section class="section-wrap promo-section bottom-divider pb-100">
-        <div class="container ">
-          <div class="row flex-parent flex-vertical-align-center flex-sm-collapse">
-            <div class="col-md-5 col-sm-12">
-              <div class="promo-section__description">
-                <h2 class="promo-section__title">Operate the software in real time from any device</h2>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-              </div>
-            </div>
-            <div class="col-md-6 col-md-offset-1 col-sm-12">
-              <img src="img/promo/2.jpg" alt="" class="promo-section__img">
-            </div>
-          </div>
-        </div>
-      </section> <!-- end promo section -->
+                            <div class="nav__btn-holder">
+                                <a href="https://imgraduationworkspace.slack.com" class="btn btn--sm btn--color rounded" target="_blank"><span>Login to Workspace</span></a>
+                            </div>
+                        </nav>
+                        <!-- end nav-wrap -->
 
 
-
-      <!-- Feature -->
-      <section class="section-wrap">
-        <div class="container">
-          <div class="row">
-
-            <div class="col-sm-6 mb-sm-40">
-              <div class="feature">
-                <a href="#" class="feature__icon-holder">
-                  <i class="ui-layers feature__icon feature__icon--gradient"></i>
-                </a>
-                <div class="feature__text">
-                  <h3 class="feature__title">Well Documented</h3>
-                  <p class="feature__paragraph feature__paragraph--padding-right">Our Theme is a very slick and clean e-commerce template with endless possibilities. Creating an awesome website with this Theme. Our Theme is a very slick and clean e-commerce template with endless possibilities. Creating an awesome website with this Theme.</p>
-                </div>
-              </div> <!-- end feature item -->
-            </div>
-
-            <div class="col-sm-6">
-              <div class="feature">
-                <a href="#" class="feature__icon-holder">
-                  <i class="ui-pencil-ruler feature__icon feature__icon--gradient"></i>
-                </a>
-                <div class="feature__text">
-                  <h3 class="feature__title">Tracking Sales</h3>
-                  <p class="feature__paragraph feature__paragraph--padding-right">Our Theme is a very slick and clean e-commerce template with endless possibilities. Creating an awesome website with this Theme. Our Theme is a very slick and clean e-commerce template with endless possibilities. Creating an awesome website with this Theme.</p>
-                </div>
-              </div> <!-- end feature item -->  
-            </div>
-
-          </div>
-        </div>
-      </section> <!-- end feature -->
-
-      <!-- Newsletter -->
-      <section class="section-wrap newsletter bg-img bg-overlay white-text relative" style="background-image: url(img/newsletter/newsletter_bg.jpg);">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-md-offset-3 text-center">
-              <h2 class="newsletter__title">Ready to start a free 14 days trial?</h2>
-              <p class="newsletter__subtitle">Create an account now and generate more leads</p>
-              <form class="newsletter__form relative">
-                <input type="email" class="newsletter__input" placeholder="Your email"><input type="submit" class="btn btn--secondary-color btn--button newsletter__submit" value="Subscribe">
-                
-              </form>
-            </div>
-          </div>
-        </div>       
-      </section> <!-- end Newsletter -->
-
-
-      <!-- Footer -->
-      <footer class="footer">
-        <div class="container">
-          <div class="footer__widgets">
-            <div class="row">
-
-              <div class="col-md-4 col-sm-3 col-xs-12">
-                <div class="widget footer__about-us">
-                  <img src="img/logo_dark.png" alt="" class="logo">
-                  <div class="footer__socials mt-40">
-                    <div class="social-icons social-icons--nobase">
-                      <a href="#"><i class="ui-twitter"></i></a>
-                      <a href="#"><i class="ui-facebook"></i></a>
-                      <a href="#"><i class="ui-linkedin"></i></a>
-                      <a href="#"><i class="ui-instagram"></i></a>
                     </div>
-                  </div>
+                    <!-- end flex-parent -->
                 </div>
-              </div> <!-- end about us -->
-
-
-              <div class="col-md-2 col-md-offset-2 col-sm-3 col-xs-12">
-                <div class="widget widget-links">
-                  <h5 class="widget-title">Product</h5>
-                  <ul class="list-no-dividers">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Resources</a></li>
-                    <li><a href="#">Affiliates</a></li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="col-md-2 col-sm-3 col-xs-12">
-                <div class="widget widget-links">
-                  <h5 class="widget-title">Support</h5>
-                  <ul class="list-no-dividers">                  
-                    <li><a href="#">Help Center</a></li>
-                    <li><a href="#">Support Policy</a></li>
-                    <li><a href="#">F.A.Q</a></li>
-                    <li><a href="#">Privacy &amp; Terms</a></li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="col-md-2 col-sm-3 col-xs-12">
-                <div class="widget widget-links">
-                  <h5 class="widget-title">Company</h5>
-                  <ul class="list-no-dividers">
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Join Us</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                  </ul>
-                </div>
-              </div>           
+                <!-- end container -->
 
             </div>
-          </div>    
-        </div> <!-- end container -->
-
-        <div class="footer__bottom top-divider">
-          <div class="container text-center">
-            <span class="copyright">
-              &copy; 2017 Emaus, Made by <a href="https://deothemes.com">DeoThemes</a>
-            </span>
-          </div>
-        </div> <!-- end footer bottom -->
-      </footer> <!-- end footer -->
+        </header>
+        <!-- end navigation -->
 
 
-      <div id="back-to-top">
-        <a href="#top"><i class="ui-arrow-up"></i></a>
-      </div>
+        <div class="content-wrapper oh">
 
-    </div> <!-- end content wrapper -->
-  </main> <!-- end main wrapper -->
-  
+            <!-- Hero -->
+            <section class="hero bg-green">
+                <div class="container hero__container hero__container--720">
 
-  <!-- jQuery Scripts -->
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/plugins.js"></script>  
-  <script type="text/javascript" src="js/scripts.js"></script>
-    
+                    <div class="row hero__outer flex-vertical-align-center">
+                        <div class="col-lg-5 col-md-7 mt-50 text-center hidden-sm hidden-xs">
+                            <img src="img/hero/book.png" alt="" height="850">
+                        </div>
+                        <div class="col-lg-5 col-lg-offset-2 col-md-5 col-xs-12">
+                            <div class="optin optin--mt-minus-30 text-center">
+                                <h1 class="optin__title">Know about<br /> IM Graduation</h1>
+                                <p class="optin__text lead">An idea that takes the parts of a structure and turns whole passion into great.</p>
+                                <form action="../assets/minds.pdf" target="_blank">
+                                    <button class="optin__btn btn btn--lg btn--color btn--wide btn--button rounded">Download Brochure</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section> <!-- end hero -->
+            <!-- Video -->
+            <section class="section-wrap bg-light bottom-divider" id="video">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe src="https://www.youtube.com/embed/_mLn99CQubI" class="embed-responsive-item"></iframe>
+                            </div>
+                            <span class="video-caption">Watch this 5-minute Inspiational video to learn more about Passion, Innovation and Freedom.</span>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- end video-section -->
+            <!-- Benefits -->
+            <section class="section-wrap pb-100" id="benefits">
+                <div class="container">
+                    <div class="heading-row text-center">
+                        <h2 class="heading">Here's a sneak peek of what IMG (IM Graduation) is about</h2>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-sm-6">
+                            <div class="benefit">
+                                <i class="benefit__icon ui-check"></i>
+                                <p class="benefit__text lead">
+                                    Let's take up this in an intutive way. We offer children starting from 1<sup>st</sup> Grade to the students who are at their end of career.
+                                    <strong>The start of IMG (IM Graduation) is by talking with the children and discovering their real interests</strong> to develop their minds in such a way that interest will be choosen as their passion to achieve in future. We do the same for all elder aged students with different offerings.
+                                </p>
+                            </div>
+
+                            <div class="benefit">
+                                <i class="benefit__icon ui-check"></i>
+                                <p class="benefit__text lead">When in the middle of pursuing if they come across any special interest and new topic that intrigues them. We help them to understand it in a better way by bringing concerned person of that department to them. Eventually, they can have a chat, disccussions and can have fun with them irrespective of any age.</p>
+                            </div>
+
+                            <div class="benefit">
+                                <i class="benefit__icon ui-check"></i>
+                                <p class="benefit__text lead">We let our students to plant their own idea that already grown as a huge tree in their minds on this world where <strong>flying freedom</strong> of them can't be snatched by any circumstances of life. We always support practical hands-on experience of their skills so we skip theory part most of times.</p>
+                            </div>
+                        </div> <!-- end col -->
+
+
+                        <div class="col-sm-6 mb-sm-40">
+                            <div class="benefit">
+                                <i class="benefit__icon ui-check"></i>
+                                <p class="benefit__text lead">
+                                    While big giants are made for money, we born from it to help everyone to achieve their passion.
+                                    Making education more practical with traditional methods and help students to build passion towards it.
+                                    Start your journey in it instead of taking long ways. Our assistance will guide you to the right path. Elegant suggestions will guide you to share your knowledge with others too.
+                                </p>
+                            </div>
+
+                            <div class="benefit">
+                                <i class="benefit__icon ui-check"></i>
+                                <p class="benefit__text lead">We are always in the search of needy people who are worthy to learn technology & places where technology needs to be taken care of. We witness the <strong>growth of a child</strong> in their own intrested field. Our Volunteers & Student Partners will insist people to be updated with the world & connect with weekly programs & events in concerned aminities. </p>
+                            </div>
+
+                            <div class="benefit">
+                                <i class="benefit__icon ui-check"></i>
+                                <p class="benefit__text lead">
+                                    This will be the <strong>new way of education</strong> in which we are taking an assistance from education centers by being partners & providing them an opportunity to build minds instead of products.
+                                </p>
+                            </div>
+                        </div> <!-- end col -->
+
+                    </div>
+                </div>
+            </section> <!-- end benefits -->
+            <!-- Opt-in Form -->
+            <section class="section-wrap section-wrap--sm bg-dark white-text">
+                <div class="container">
+                    <div class="heading-row mb-30 text-center">
+                        <h2 class="heading">Get the InfoBook</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-md-offset-4">
+                            <form action="../assets/minds.pdf" target="_blank">
+                                <button class="optin__btn btn btn--lg btn--color btn--wide btn--button rounded">Download Brochure</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- end opt-in form -->
+            <!-- Author -->
+            <section class="section-wrap pb-0" id="author">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 mb-md-40">
+                            <h2 class="author__title">IM Graduation</h2>
+                            <p class="author__text lead">
+                                A unique way of pursuing their dreams with all the support from IM Group & Partnered Institutions.
+                                The program included in InspiredMinds to provide a secondary education to children along with academics without any hassels. This program helps them to discover their skills & talents that make them pursue their passion along with academics.
+
+                            </p>
+
+                            <p class="author__text lead">
+                                IM Graduation is about getting IM Degree based on individual levels of building themselves with the completion of lightyears. From Primary to UG, students can join in any stages based on their performance evaluation. This program offers degree based on their passion levels rather than ages.
+                            </p>
+
+                            <p class="author__text lead">
+                                We support talents in the fields they are intrested in or else we help them to know about their real talents. Basically our mision is to make the students aware about current techonology & then making them to pursue their passion rather than giving up.
+                            </p>
+
+                        </div>
+
+                        <div class="col-md-6 col-md-offset-1 text-center">
+                            <img src="img/promo/img.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- end author -->
+            <!-- Partners -->
+            <section class="partners text-center bg-light bottom-divider">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-sm-5ths col-xs-3 col-xxs-6">
+                            <a href="#">
+                                <img src="img/partners/partner_logo_dark_1.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col-sm-5ths col-xs-3 col-xxs-6">
+                            <a href="#">
+                                <img src="img/partners/partner_logo_dark_2.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col-sm-5ths col-xs-3 col-xxs-6">
+                            <a href="#">
+                                <img src="img/partners/partner_logo_dark_3.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col-sm-5ths col-xs-3 col-xxs-6">
+                            <a href="#">
+                                <img src="img/partners/partner_logo_dark_4.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="col-sm-5ths hidden-xs">
+                            <a href="#">
+                                <img src="img/partners/partner_logo_dark_5.png" alt="">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </section> <!-- end partners -->
+            <!-- Testimonials -->
+            <section class="section-wrap bg-light bottom-divider" id="testimonials">
+                <div class="container">
+                    <div class="heading-row text-center">
+                        <h2 class="heading">Few Inspirations</h2>
+                    </div>
+
+                    <div class="row">
+
+                        <div id="owl-testimonials" class="owl-carousel owl-theme">
+
+                            <div class="testimonial__wrap">
+                                <div class="testimonial box-shadow text-center clearfix">
+                                    <img src="img/testimonials/1.png" alt="" class="testimonial__img">
+                                    <div class="testimonial__body">
+                                        <p class="testimonial__text">“Sometimes life's going to hit you in the head with a brick. Don't lose faith. I'm convinced that the only thing that kept me going was that I loved what I did.” </p>
+                                    </div>
+                                    <div class="testimonial__info">
+                                        <span class="testimonial__author">Steven Paul Jobs</span>
+                                        <span class="testimonial__company">Founder, Apple Inc</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial__wrap">
+                                <div class="testimonial box-shadow text-center clearfix">
+                                    <img src="img/testimonials/2.png" alt="" class="testimonial__img">
+                                    <div class="testimonial__body">
+                                        <p class="testimonial__text">“Flipping burgers is not beneath your dignity. Your Grandparents had a different word for burger flipping – they called it opportunity.”</p>
+                                    </div>
+                                    <div class="testimonial__info">
+                                        <span class="testimonial__author">Bill Gates</span>
+                                        <span class="testimonial__company">Founder, Microsoft</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial__wrap">
+                                <div class="testimonial box-shadow text-center clearfix">
+                                    <img src="img/testimonials/3.png" alt="" class="testimonial__img">
+                                    <div class="testimonial__body">
+                                        <p class="testimonial__text">“You want to be extra rigorous about making the best possible thing you can. Find everything that’s wrong with it and fix it. Seek negative feedback, particularly from friends.”</p>
+                                    </div>
+                                    <div class="testimonial__info">
+                                        <span class="testimonial__author">Elon Musk</span>
+                                        <span class="testimonial__company">Founder, Tesla</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial__wrap">
+                                <div class="testimonial box-shadow text-center clearfix">
+                                    <img src="img/testimonials/4.png" alt="" class="testimonial__img">
+                                    <div class="testimonial__body">
+                                        <p class="testimonial__text">“Be not Afraid of anything. You will do Marvelous work. it is Fearlessness that brings Heaven even in a moment.” </p>
+                                    </div>
+                                    <div class="testimonial__info">
+                                        <span class="testimonial__author">Swami Vivekananda</span>
+                                        <span class="testimonial__company">Inspirational Personage</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial__wrap">
+                                <div class="testimonial box-shadow text-center clearfix">
+                                    <img src="img/testimonials/5.png" alt="" class="testimonial__img">
+                                    <div class="testimonial__body">
+                                        <p class="testimonial__text">“But if you don’t take the necessary steps to make them happen, dreams are just mirages that mess with your head!” </p>
+                                    </div>
+                                    <div class="testimonial__info">
+                                        <span class="testimonial__author">Chris Gardner</span>
+                                        <span class="testimonial__company">Founder, Gardner Rich & Co</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div> <!-- end of slider -->
+
+                    </div>
+                </div>
+            </section> <!-- end testimonials -->
+            <!-- Faq -->
+            <section class="section-wrap pb-90" id="faq">
+                <div class="container">
+                    <div class="heading-row text-center">
+                        <h2 class="heading">
+                            Introduce to  Process Flow
+                        </h2>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-sm-12 col-sm-offset-1">
+                            <h4 class="faq__title">Commitment</h4>
+                            <p class="faq__text">
+                                We commit with the institutions by being official partners through exchanging mutual informations & agreeing for the terms.
+                            </p>
+
+                            <h4 class="faq__title">More Details about process</h4>
+                            <p class="faq__text">
+                                IM Graduation starts right after the enrollment of students followed by the selection of Co-ordinators & Student partners.
+                                For assigning the levels of students we conduct an event where our team will take care of the process. We provide <strong>mechandise</strong> to every student according to the groups. We do workshops on different categories to tell them about the basics then we will arrange for a student counseling to realise about their real interest. Knowing their interest we keep on training them through necessary materials & let them to get the internships to perfect their skill levels. In every stage of their development we will upgrade their levels by marking  with rewards & certifications. Getting educated is not only a major part of IM Degree, connecting with the people of different mindset & learning to interact with them serves the major part.   Depending on all the aspects of their life students will earn IM Degree.
+                                This process can extend until a student reaches his/her goal. Every year they spent in IM Graduation Program will be considered as a lightyear.
+                            </p>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </section> <!-- end faq -->
+            <!-- Download -->
+            <section class="section-wrap bg-green">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-8 col-md-offset-2 col-xs-12">
+                            <div class="optin text-center">
+                                <h1 class="optin__title">Join in our community to know more</h1>
+                                <div class="optin__wrap">
+                                    <p class="optin__text lead">An idea that turns an individual into the great. Subscribe to us</p>
+                                    <form class="optin__form" action="../club/subscribe.php">
+                                        <input type="email" name="email" class="optin__input" placeholder="Your e-mail address">
+                                        <button class="optin__btn btn btn--lg btn--color btn--wide btn--button rounded">Subscribe to Latest News</button>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section> <!-- end download -->
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="footer__bottom top-divider">
+                    <div class="container text-center">
+                        <div class="footer__bottom-links">
+                            <ul class="list-inline">
+                                <li><a href="../terms.html">Terms &amp; Conditions</a></li>
+                                <li><a href="../privacy.html">Privacy Policy</a></li>
+                                <li><a href="../refund.html">Refund Policy</a></li>
+                                <li><a href="../ask.html">Ask Questions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer__bottom  ">
+                        <div class="container text-center ">
+                            <span class="copyright " id="footerCopy"></span>
+                        </div>
+                    </div>
+                </div> <!-- end footer bottom -->
+            </footer> <!-- end footer -->
+
+
+            <div id="back-to-top">
+                <a href="#top"><i class="ui-arrow-up"></i></a>
+            </div>
+
+        </div> <!-- end content wrapper -->
+    </main> <!-- end main wrapper -->
+    <!-- jQuery Scripts -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript">
+        var d = new Date();
+        var n = d.getFullYear();
+        document.getElementById("footerCopy").textContent = "© " + n + " IM Graduation, Made by InspiredMemories LLP"
+    </script>
+
 </body>
 </html>
