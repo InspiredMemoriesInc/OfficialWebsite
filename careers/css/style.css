@@ -554,8 +554,8 @@ body.fullpage{
 	2. Header Section Styles
 -------------------------------------------------------------------*/
 .logo{
-    width: 97px;
-    margin-top: 20px
+    width: 170px;
+    /*! margin-top: 20px */
 }
 #nav{
     background-color: #ffffff;
