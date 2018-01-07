@@ -103,7 +103,7 @@ $navBg: rgba(13, 20, 34, 0.95); // Used for shading on top of images and element
 }
 @media (min-width: 992px) {
   .container {
-    width: 950px;
+    width: 100%;
   }
 }
 @media (min-width: 1200px) {
@@ -1408,7 +1408,7 @@ nav.headroom--not-top .n_ {
   margin-right: -5px;
   top: 10px;
 }
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
   #menu-icon {
     display: inline-block;
   }
