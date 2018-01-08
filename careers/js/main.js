@@ -12,6 +12,12 @@
 
 "use strict";
 
+var d = new Date();
+var n = d.getFullYear();
+document.getElementById("footerCopy").textContent = "Copyright " + n + " InspiredMemories - All Rights Reserved";
+
+
+
 // Add Slider functionality to the top of home page in #top-content section.
 var mainSlider = $("#main-slider","#top-content");
 mainSlider.slick({
