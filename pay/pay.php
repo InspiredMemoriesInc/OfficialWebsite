@@ -15,8 +15,8 @@ $api = new Api($keyId, $keySecret);
 // Docs: https://docs.razorpay.com/docs/orders
 //
 $orderData = [
-    'receipt'         => 3456,
-    'amount'          => 2000 * 100, // 2000 rupees in paise
+    'receipt'         => $_POST['receipt'],
+    'amount'          => $_POST['amount'] * 100, // 2000 rupees in paise
     'currency'        => 'INR',
     'payment_capture' => 1 // auto capture
 ];
@@ -39,25 +39,24 @@ if ($displayCurrency !== 'INR')
 
 $checkout = 'automatic';
 
-if (isset($_GET['checkout']) and in_array($_GET['checkout'], ['automatic', 'manual'], true))
-{
-    $checkout = $_GET['checkout'];
-}
+
+
+$orderid = mt_rand();
 
 $data = [
     "key"               => $keyId,
     "amount"            => $amount,
-    "name"              => "DJ Tiesto",
-    "description"       => "Tron Legacy",
-    "image"             => "https://s29.postimg.org/r6dj1g85z/daft_punk.jpg",
+    "name"              => $_POST['name'],
+    "description"       => $_POST['description'],
+    "image"             => $_POST['imageURL'],
     "prefill"           => [
-    "name"              => "Daft Punk",
-    "email"             => "customer@merchant.com",
-    "contact"           => "9999999999",
+    "name"              => '',
+    "email"             => '',
+    "contact"           => '',
     ],
     "notes"             => [
-    "address"           => "Hello World",
-    "merchant_order_id" => "12312321",
+    "address"           => '',
+    "merchant_order_id" => $orderid,
     ],
     "theme"             => [
     "color"             => "#F37254"
