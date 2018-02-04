@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html class=""><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<title>EventList - Mitri Events</title>
+
+	<!-- Standard Favicon -->
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+	
+	<!-- For iPhone 4 Retina display: -->
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-icon-114x114.png">
+	
+	<!-- For iPad: -->
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-icon-72x72.png">
+	
+	<!-- For iPhone: -->
+	<link rel="apple-touch-icon-precomposed" href="images/apple-icon-57x57.png">
+	
+	<!-- Library - Bootstrap v3.3.5 -->
+    <link rel="stylesheet" type="text/css" href="libraries/lib.css">
+    <link rel="stylesheet" type="text/css" href="libraries/Stroke-Gap-Icon/stroke-gap-icon.css">
+	
+	<!-- Custom - Common CSS -->
+	<link rel="stylesheet" type="text/css" href="css/plugins.css">
+	<link rel="stylesheet" type="text/css" href="css/navigation-menu.css">
+	<link rel="stylesheet" type="text/css" href="libraries/lightslider-master/lightslider.css">
+	
+	<!-- Custom - Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/shortcode.css">
+	<!--[if lt IE 9]>		
+		<script src="js/html5/respond.min.js"></script>
+    <![endif]-->
+	
+</head>
+
+<body data-offset="200" data-spy="scroll" data-target=".ow-navigation">
+	<!-- Loader -->
+	<div id="site-loader" class="load-complete">
+		<div class="loader">
+			<div class="loader-inner ball-clip-rotate">
+				<div></div>
+			</div>
+		</div>
+	</div><!-- Loader /- -->
+	
+	<!-- Header -->
+	<header class="header-main container-fluid no-padding">
+		<!-- Top Header -->
+		<div class="top-header container-fluid no-padding">
+			<!-- Container -->
+			<div class="container">
+				<div class="row">
+					<!-- Social -->
+					<div class="col-md-4 col-sm-4 col-xs-6 social">
+						<ul>	
+							<li><a title="Facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a title="Twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a title="Google Plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+						</ul>
+					</div><!-- Social /- -->
+					
+					<!-- Register -->
+					<div class="col-md-4 col-sm-4 col-xs-6 register">
+						<a href="#" title="Register">Register</a>
+					</div><!-- Register /- -->
+					
+					<!-- Logo Block -->
+					<div class="col-md-4 col-sm-4 col-xs-12 logo-block">
+						<a href="index.html" title="Logo">
+							<img src="images/logo.png" alt="logo" width="46" height="41"/>
+							<h3>Mitri Events</h3>
+						</a>
+					</div><!-- Logo Block /- -->
+				</div>
+			</div><!-- Container /- -->
+		</div><!-- Top Header /- -->
+		
+		<!-- Menu Block -->
+		<div class="menu-block container-fluid no-padding">
+			<!-- Container -->
+			<div class="container">
+				<!-- User -->
+				<a href="#" class="user" title="User">
+					<i class="fa fa-user"></i>
+				</a><!-- User /- -->
+				<!-- Expanding Search -->
+				<div class="menu-search">
+					<div id="sb-search" class="sb-search">
+						<form>
+							<input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search" />
+							<button class="sb-search-submit"><i class="fa fa-search"></i></button>
+							<span class="sb-icon-search"></span>
+						</form>
+					</div>
+				</div><!-- Expanding Search /- -->
+				<div class="col-md-10 col-sm-12">
+					<!-- Navigation -->
+					<nav class="navbar ow-navigation">
+						<div class="navbar-header">
+							<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a title="Logo" href="#" class="navbar-brand"><img src="images/logo.png" alt="logo"/><span>Mitri Events</span></a>
+						</div>
+						<div class="navbar-collapse collapse" id="navbar">
+							<ul class="nav navbar-nav menubar">
+								<li><a title="Home" href="index.html">Home</a></li>
+								<li><a title="About Us" href="about-page.html">About Us</a></li>
+								<li><a title="Services" href="services-page.html">Services</a></li>
+								<li class="active dropdown">
+									<a aria-expanded="false" aria-haspopup="true" role="button" class="dropdown-toggle" title="Pages" href="#">Pages</a>
+									<i class="ddl-switch fa fa-angle-down"></i>
+									<ul class="dropdown-menu">
+										<li><a title="Event Grid" href="eventgrid-page.html">Event Grid</a></li>
+										<li><a title="Event List" href="eventlist-page.html">Event List</a></li>
+										<li><a title="Event Single" href="eventsingle-page.html">Event Single</a></li>
+										<li><a title="404" href="404.html">404</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a aria-expanded="false" aria-haspopup="true" role="button" class="dropdown-toggle" title="Blog" href="#">Latest News</a>
+									<i class="ddl-switch fa fa-angle-down"></i>
+									<ul class="dropdown-menu">
+										<li><a title="Blog" href="blog-page.html">Blog</a></li>
+										<li><a title="Blog Post" href="blogpost-page.html">Blog Post</a></li>
+									</ul>
+								</li>
+								<li><a title="Contact" href="contactus.html">Contact Us</a></li>
+							</ul>
+						</div>
+					</nav><!-- Navigation /- -->
+				</div>
+			</div><!-- Container /- -->
+		</div><!-- Menu Block /- -->
+	</header><!-- Header /- -->	
+
+	<!-- PageBanner -->
+	<div class="container-fluid page-banner event-grid event-list no-padding">
+		<div class="section-padding"></div>
+			<div class="container">
+				<div class="banner-content-block">
+					<div class="banner-content">
+						<h3>Recent Events List</h3>
+						<ol class="breadcrumb">
+							<li><a href="index.html">Home</a></li>
+							<li>Pages</li>
+							<li class="active">Events</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		<div class="section-padding"></div>
+	</div><!-- PageBanner /- -->
+	
+	<!-- Event List -->
+	<div class="container-fluid eventlist upcoming-event latest-blog no-padding">
+		<div class="section-padding"></div>
+		<div class="container">
+			<div class="section-header">
+				<h3>Our Successful History</h3>
+				<span>Recent Events</span>
+			</div>
+			<div class="event-categories">
+				<div class="event-select-option">
+					<select class="selectpicker" title="Choose one of the following...">
+						<option data-icon="icon-Folder">Sort Events By Field</option>
+						<option data-icon="icon-Files">Event 1</option>
+						<option data-icon="icon-Floppy">Event 2</option>
+						<option data-icon="icon-File">Event 3</option>
+					</select>
+				</div>
+				<div class="event-select-option">
+					<select class="selectpicker">
+						<option data-icon="icon-User">Popular Speakers</option>
+						<option data-icon="icon-Users">Speakers 1</option>
+						<option data-icon="icon-User">Speakers 2</option>
+						<option data-icon="icon-Users">Speakers 3</option>
+					</select>
+				</div>
+				<div class="event-select-option">
+					<select class="selectpicker">
+						<option data-icon="icon-Tag">Event Category</option>
+						<option data-icon="icon-Tag">Category 1</option>
+						<option data-icon="icon-Tag">Category 2</option>
+						<option data-icon="icon-Tag">Category 3</option>
+					</select>
+				</div>
+				<a href="#" title="Filter">Filter</a>
+			</div>
+			<div class="row">
+				<div class="col-md-9 col-sm-6 col-xs-6 content-area">
+					<article class="type-post">
+						<div class="entry-cover">
+							<a href="eventsingle-page.html"><img src="images/history4.jpg" alt="history" width="310" height="246"/></a>
+						</div>
+						<div class="entry-block">
+							<div class="entry-title">
+								<a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Corporate Paper Meetup Event</h3></a>
+							</div>
+							<div class="entry-meta">
+								<div class="post-date">
+									<p>Feb<span>21</span></p>
+								</div>
+								<div class="post-metablock">
+									<div class="post-time">
+										<span>03:00pm - 07:00pm</span>
+									</div>
+									<div class="post-location">
+										<span>Design Street, Perth, Australia - 18</span>
+									</div>
+								</div>
+							</div>
+							<div class="entry-content">
+								<p>The ship set ground on the shore of this uncharted desert isle with Gilligan the mission to explore new life.</p>
+							</div>
+							<a href="eventsingle-page.html" class="learn-more" title="Learn More">Learn More</a>
+						</div>
+					</article>
+					<article class="type-post">
+						<div class="entry-cover">
+							<a href="eventsingle-page.html"><img src="images/history5.jpg" alt="history" width="310" height="246"/></a>
+						</div>
+						<div class="entry-block">
+							<div class="entry-title">
+								<a href="eventsingle-page.html" title="Financial Growth Conference"><h3>Financial Growth Conference</h3></a>
+							</div>
+							<div class="entry-meta">
+								<div class="post-date">
+									<p>Jan<span>10</span></p>
+								</div>
+								<div class="post-metablock">
+									<div class="post-time">
+										<span>05:00pm - 09:00pm</span>
+									</div>
+									<div class="post-location">
+										<span>Down Town, Melbourne, Australia - 11</span>
+									</div>
+								</div>
+							</div>
+							<div class="entry-content">
+								<p>Its mission to explore strange new worlds to seek out life and new civilizations to boldly go where no man.</p>
+							</div>
+							<a href="eventsingle-page.html" class="learn-more" title="Learn More">Learn More</a>
+						</div>
+					</article>
+					<article class="type-post">
+						<div class="entry-cover">
+							<a href="eventsingle-page.html"><img src="images/history6.jpg" alt="history" width="310" height="246"/></a>
+						</div>
+						<div class="entry-block">
+							<div class="entry-title">
+								<a href="eventsingle-page.html" title="Event Badge Attendance Schedule"><h3>Event Badge Attendance Schedule</h3></a>
+							</div>
+							<div class="entry-meta">
+								<div class="post-date">
+									<p>Dec<span>16</span></p>
+								</div>
+								<div class="post-metablock">
+									<div class="post-time">
+										<span>10:00pm - 02:00pm</span>
+									</div>
+									<div class="post-location">
+										<span>Design Valley, Sydney, Australia - 04</span>
+									</div>
+								</div>
+							</div>
+							<div class="entry-content">
+								<p>The powerless in a world of criminals who operate above the law the first mate and his skipper too will do.</p>
+							</div>
+							<a href="eventsingle-page.html" class="learn-more" title="Learn More">Learn More</a>
+						</div>
+					</article>
+					<article class="type-post">
+						<div class="entry-cover">
+							<a href="eventsingle-page.html"><img src="images/history7.jpg" alt="history" width="310" height="246"/></a>
+						</div>
+						<div class="entry-block">
+							<div class="entry-title">
+								<a href="eventsingle-page.html" title="Organizing Corporate Press Meet"><h3>Organizing Corporate Press Meet</h3></a>
+							</div>
+							<div class="entry-meta">
+								<div class="post-date">
+									<p>Nov<span>08</span></p>
+								</div>
+								<div class="post-metablock">
+									<div class="post-time">
+										<span>05:00pm - 09:00pm</span>
+									</div>
+									<div class="post-location">
+										<span>Down Town, Melbourne, Australia - 11</span>
+									</div>
+								</div>
+							</div>
+							<div class="entry-content">
+								<p>The ship set ground on the shore of this uncharted desert isle with Gilligan the mission to explore strange.</p>
+							</div>
+							<a href="eventsingle-page.html" class="learn-more" title="Learn More">Learn More</a>
+						</div>
+					</article>
+					<article class="type-post">
+						<div class="entry-cover">
+							<a href="eventsingle-page.html"><img src="images/history8.jpg" alt="history" width="310" height="246"/></a>
+						</div>
+						<div class="entry-block">
+							<div class="entry-title">
+								<a href="eventsingle-page.html" title="Professionals Occasional Gathering"><h3>Professionals Occasional Gathering</h3></a>
+							</div>
+							<div class="entry-meta">
+								<div class="post-date">
+									<p>Oct<span>12</span></p>
+								</div>
+								<div class="post-metablock">
+									<div class="post-time">
+										<span>03:00pm - 08:00pm</span>
+									</div>
+									<div class="post-location">
+										<span>Design Town, Perth, Australia - 07</span>
+									</div>
+								</div>
+							</div>
+							<div class="entry-content">
+								<p>Its mission to explore strange new worlds to seek out life and new civilizations to boldly go where no man.</p>
+							</div>
+							<a href="eventsingle-page.html" class="learn-more" title="Learn More">Learn More</a>
+						</div>
+					</article>
+					
+					<!-- Ow Pagination -->
+					<div class="ow-pagination">
+						<nav>
+							<ul class="pager">
+								<li class="page-prv"><a href="#" title="Previous"><i class="fa fa-long-arrow-left" aria-hidden="true"></i>Previous Event</a></li>
+								<li><a href="#"><i class="fa fa-th" aria-hidden="true"></i></a></li>								
+								<li class="page-next"><a href="#" title="Next">Next Event<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
+							</ul>
+						</nav>
+					</div><!-- Ow Pagination /- -->
+					
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-6 widget-area">
+					<aside class="widget widget_similar_event">
+						<div class="widget-title">
+							<span class="icon icon-Blog"></span>
+							<h3>Similar Events</h3>
+						</div>						
+						<ul>
+							<li><a title="Business Conference" href="#"><span class="icon icon-Flag"></span><h4>Business Conference</h4></a></li>
+							<li><a title="Corporate Management Visit" href="#"><span class="icon icon-Flag"></span><h4>Corporate Management Visit</h4></a></li>
+							<li><a title="Industrial People Meeting" href="#"><span class="icon icon-Flag"></span><h4>Industrial People Meeting</h4></a></li>
+							<li><a title="Finacial Benifits Meetups" href="#"><span class="icon icon-Flag"></span><h4>Finacial Benifits Meetups</h4></a></li>
+							<li><a title="Charity Donation Event" href="#"><span class="icon icon-Flag"></span><h4>Charity Donation Event</h4></a></li>
+						</ul>
+					</aside>
+					<aside class="widget widget_event">
+						<div class="event-block">
+							<h3>January 03-07</h3>
+							<p>09, Design Street, New York, United States </p>
+							<div class="event-content">
+								<img src="images/slider-thumb1.jpg" alt="slider-thumb" width="74" height="74"/>
+								<h4>Daniel Lesner<span>public speaker</span></h4>
+							</div>
+							<a title="Register now" href="#">Register Now</a>
+						</div>
+					</aside>
+					
+					<aside class="widget widget_find_event">
+						<div class="widget-title">
+							<span class="icon icon-Podium"></span>
+							<h3>Find Events</h3>
+						</div>
+						<div class="find-event_top-block">
+							<div class="input-group">
+								<input type="text" placeholder="Enter keyword" class="form-control"/>
+								<span class="icon icon-Eye"></span>
+								<span class="input-group-btn">								
+									<button type="button" class="btn"><i class="fa fa-search"></i></button>
+								</span>
+							</div>
+							<div class="event-select-option">
+								<select class="selectpicker">
+									<option data-icon="icon-WorldWide">Event Location</option>
+									<option data-icon="icon-WorldWide">Location 1</option>
+									<option data-icon="icon-WorldWide">Location 2</option>
+									<option data-icon="icon-WorldWide">Location 3</option>
+								</select>
+							</div>
+							<div class="event-select-option">
+								<select class="selectpicker">
+									<option data-icon="icon-Notes">Search by date</option>
+									<option data-icon="icon-Notes">Date 1</option>
+									<option data-icon="icon-Notes">Date 2</option>
+									<option data-icon="icon-Notes">Date 3</option>
+								</select>
+							</div>
+							<div class="event-select-option">
+								<select class="selectpicker">
+									<option data-icon="icon-Tag">Search by category</option>
+									<option data-icon="icon-Tag">category 1</option>
+									<option data-icon="icon-Tag">category 2</option>
+									<option data-icon="icon-Tag">category 3</option>
+								</select>
+							</div>							
+							<a title="Search Event" href="#">Search Event</a>
+						</div>
+					</aside>
+					<aside class="widget widget_recent">
+						<div class="widget-title">
+							<span class="icon icon-Notes"></span>
+							<h3>Recent Events</h3>
+						</div>
+						<div class="recent-block">
+							<div class="recent-content">
+								<a href="eventsingle-page.html"><img src="images/recent-post1.jpg" alt="RecentPost" width="72" height="72"/></a>
+								<h3><a href="eventsingle-page.html">On my way to where the air is sweet</a></h3>
+								<a href="eventsingle-page.html">12 Jan 2016</a>
+							</div>
+							<div class="recent-content">
+								<a href="eventsingle-page.html"><img src="images/recent-post2.jpg" alt="RecentPost" width="72" height="72"/></a>
+								<h3><a href="eventsingle-page.html">Beats all you've ever say been in trouble</a></h3>
+								<a href="eventsingle-page.html">29 Dec 2015</a>
+							</div>
+							<div class="recent-content">
+								<a href="eventsingle-page.html"><img src="images/recent-post3.jpg" alt="RecentPost" width="72" height="72"/></a>
+								<h3><a href="eventsingle-page.html">Now the world due to just a drum</a></h3>
+								<a href="eventsingle-page.html">18 Nov 2015</a>
+							</div>
+						</div>
+					</aside>
+					<aside class="widget widget_tags">
+						<div class="widget-title">
+							<span class="icon icon-Tag"></span>
+							<h3>Random Tags</h3>
+						</div>
+						<div class="tag-block">
+							<a title="Event" href="#">Event</a>
+							<a title="Meetings" href="#">Meetings</a>
+							<a title="Charity" href="#">Charity</a>
+							<a title="Communication" href="#">Communication</a>
+							<a title="Schedule" href="#">Schedule</a>
+							<a title="Conference" href="#">Conference</a>
+							<a title="Services" href="#">Services</a>
+						</div>
+					</aside>
+				</div>
+			</div>
+		</div>
+		<div class="section-padding"></div>
+	</div><!-- Event List /- -->
+	<!-- Footer Main -->
+	<footer class="footer-main container-fluid no-padding">
+		<!-- Container -->
+		<div class="container">
+			<!-- Footer About -->
+			<div class="footer-about">
+				<div class="logo-block">
+					<img src="images/logo.png" alt="logo" width="70" height="63"/>
+					<h3>Mitri Events</h3>
+				</div>	
+				<div class="footer-about-content">
+					<h3 class="block-title">About Mitri Events conference</h3>
+					<p>Feels so right it cant be wrong. Rockin' and rollin' all week long. And when the odds are against him and their dangers work to do. You bet your life Speed Racer he will see it through. Boy the way Glen Miller played. Songs that made the hit parade. Guys like us we had it made. Those were the days.</p>
+				</div>
+			</div><!-- Footer About /- -->
+			
+			<div class="row">
+				<!-- Customer Service Widget -->
+				<aside class="col-md-3 col-sm-6 col-xs-6 widget widget_customer_services">
+					<h3 class="block-title">Customer services</h3>
+					<ul>
+						<li><a title="Online Earning" href="#">Online Earning</a></li>
+						<li><a title="Materials" href="#">Materials</a></li>
+						<li><a title="Presentation" href="#">Presentation</a></li>
+						<li><a title="Printed materials" href="#">Printed materials</a></li>
+						<li><a title="Curriculum" href="#">curriculum</a></li>
+						<li><a title="Literature" href="#">literature</a></li>
+						<li><a title="Help & Faq" href="#">Help & Faq</a></li>
+					</ul>
+				</aside><!-- Customer Service Widget /- -->
+				
+				<!-- Quick Links Widget -->
+				<aside class="col-md-2 col-sm-6 col-xs-6 widget widget_quick_links">
+					<h3 class="block-title">Quick links</h3>
+					<ul>
+						<li><a title="Faq" href="#">Faq</a></li>
+						<li><a title="Support" href="#">Support</a></li>
+						<li><a title="Sitemap" href="#">Sitemap</a></li>
+						<li><a title="Community" href="#">Community</a></li>
+						<li><a title="membership" href="#">membership</a></li>
+						<li><a title="Events" href="eventlist-page.html">Events</a></li>
+						<li><a title="Contact us" href="contactus.html">Contact us</a></li>
+					</ul>
+				</aside><!-- Quick Links Widget /- -->
+				
+				<!-- ContactUs Widget -->
+				<aside class="col-md-3 col-sm-6 col-xs-6 widget widget_contactus">
+					<h3 class="block-title">Contact Us</h3>
+					<div class="contactinfo-box">
+						<i class="fa fa-map-marker"></i>
+							<p>09 Design Street, Mitri, Victoria, Australia.</p>
+					</div>
+					<div class="contactinfo-box">
+						<i class="fa fa-phone"></i>
+						<p>
+							<a title="0112345678" href="tel:+0112345678">+01 123 456 78</a>
+							<a title="0112355689" href="tel:+0112355689">+01 123 556 89</a>
+						</p>
+					</div>
+					<div class="contactinfo-box">
+						<i class="fa fa-map-marker"></i>
+						<p>
+							<a href="mailto:Info@OurDomain.Com" title="Info@OurDomain.Com">Info@OurDomain.Com</a>
+							<a href="mailto:Support@OurDomain.Com" title="Support@OurDomain.Com">Support@OurDomain.Com</a>
+						</p>
+					</div>
+				</aside><!-- ContactUs Widget /- -->
+				
+				<!-- NewsLetter Widget -->
+				<aside class="col-md-4 col-sm-6 col-xs-6 widget widget_newsletter">
+					<h3 class="block-title">News Letter</h3>
+					<p>Got a dream and we just know now we're gonna make our dream come true</p>
+					<div class="input-group">
+						<input type="text" placeholder="Enter Address" class="form-control">
+						<span class="input-group-btn">
+							<button type="button" title="Subscribe" class="btn">Go</button>
+						</span>
+					</div>
+					<ul>
+						<li><a title="Facebook" data-toggle="tooltip" href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a title="Twitter" data-toggle="tooltip" href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a title="Google Plus" data-toggle="tooltip" href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a title="Linkedin" data-toggle="tooltip" href="#"><i class="fa fa-linkedin"></i></a></li>
+						<li><a title="Pinterest" data-toggle="tooltip" href="#"><i class="fa fa-pinterest-p"></i></a></li>
+						<li><a title="Dribbble" data-toggle="tooltip" href="#"><i class="fa fa-dribbble"></i></a></li>
+					</ul>
+				</aside><!-- NewsLetter Widget /- -->
+			</div>
+		</div><!-- Container /- -->	
+		
+		<!-- Container -->
+		<div class="container">
+			<div class="footer-menu">
+				<!-- Copyrights -->
+				<div class="copyrights ow-pull-left">
+					<p>&copy; 2016 | All rights reserved</p>
+				</div><!-- Copyrights /- -->
+				<!-- Navigation -->
+				<nav class="navbar ow-navigation ow-pull-right">
+					<div class="navbar-header">
+						<button aria-controls="navbar" aria-expanded="false" data-target="#navbar2" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="navbar-collapse collapse" id="navbar2">
+						<ul class="nav navbar-nav">
+							<li><a title="Home" href="index.html">Home</a></li>
+							<li><a title="About Us" href="about-page.html">About Us</a></li>
+							<li><a title="Services" href="services-page.html">Services</a></li>
+							<li><a title="Latest News" href="blog-page.html">Latest News</a></li>
+							<li><a title="Contact Us" href="contactus.html">Contact Us</a></li>
+						</ul>
+					</div>
+				</nav><!-- Navigation /- -->
+			</div><!-- Footer Menu /- -->
+		</div><!-- Container /- -->
+	</footer><!-- Footer Main /- -->
+	
+	<!-- JQuery v1.11.3 -->
+	<script src="js/jquery.min.js"></script>
+	
+	<!-- Library - Js -->
+	<script src="libraries/lib.js"></script><!-- Bootstrap JS File v3.3.5 -->
+	<script src="libraries/jquery.countdown.min.js"></script>
+	
+	<script src="libraries/lightslider-master/lightslider.js"></script>
+	<!-- Library - Google Map API -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCn3Z6i1AYolP3Y2SGis5qhbhRwmxxo1wU"></script>
+	<script src="js/functions.js"></script>
+</body>
+</html>
