@@ -1,0 +1,49 @@
+<head>
+    <title>Dev Labs Registration</title>
+</head>
+
+<body>
+    <!-- Firebase App Initialisation -->
+    <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBGQSmaf5n10obiKFOL6S_WOPYEWZFWGgs",
+            authDomain: "devlabs-df5ac.firebaseapp.com",
+            databaseURL: "https://devlabs-df5ac.firebaseio.com",
+            projectId: "devlabs-df5ac",
+            storageBucket: "",
+            messagingSenderId: "523219563814"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <!-- JQuery v1.11.3 -->
+    <script src="js/jquery.min.js"></script>
+
+    <script>
+        var database = firebase.database();
+
+        function randomString(length) {
+            return Math.round((Math.pow(36, length + 1) - Math.random() * Math.pow(36, length))).toString(36).slice(1);
+        }
+        userid = randomString(10);
+
+        data = {
+            name: $("#name").value,
+            phone: $("#phone").value,
+            email: $("#email").value,
+            sem: $("#semester").value,
+            branch: $("#branch").value,
+            purpose: $("#purpose").value,
+            know: $("#know").value,
+            twitter: $("#twitter").value,
+            linkedin: $("#linkedin").value,
+            hometown: $("#hometown").value,
+            field: $("#field").value,
+            learn: $("#learn").value,
+            aboutus: $("#aboutus").value,
+            lab: $("#lab").value
+        }
+        firebase.database().ref('devlabs/registrations/success/' + userid).set(data);
+    </script>
+</body>

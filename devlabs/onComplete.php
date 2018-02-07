@@ -1,4 +1,25 @@
-﻿<!DOCTYPE html>
+﻿<?php
+session_start();
+
+$email = $_SESSION['email1'];
+$to = $email;
+$subject = 'Developer Labs Registration Confirmation';
+$from = "IM Developer Labs";
+$reply = "devlabs@inspiredmemories.in";
+
+$headers = "From: " . strip_tags($reply) . "\r\n";
+$headers .= "Reply-To: ". strip_tags($reply) . "\r\n";
+$headers .= "CC: office@inspiredmemories.in\r\n";
+$headers .= "MIME-Version: 1.0\r\n";
+$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+
+
+$message = file_get_contents("email.html");
+
+mail($to, $subject, $message, $headers);
+?>
+
+<!DOCTYPE html>
 <!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
 <!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
 <!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
@@ -11,9 +32,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Register For Dev Labs - InspiredMemories</title>
+    <meta name="description" content="IM Developer Labs is a technology workshop we conduct in colleges to educate them with the latest technology. We are proud to announce #IMDevLabs that will give every student who participate the confidence to grow and work on their dreams">
+    <meta name="author" content="InspiredMemories LLP">
+    <title>Payment Successful - #IMDevLabs</title>
 
     <!-- Favicons -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
@@ -169,146 +190,187 @@
         <div class="row contact-form-section">
             <div class="col-md-8 col-sm-8">
                 <div class="section-header">
-                    <h3>Register for #IMDevLabs </h3>
-                    <span style="font-family: 'Titillium Web', sans-serif;">Note: Only one ticket can be registered at a time so please fill the form individually and let others to do so. </span>
+                    <h3>Registeration Successful </h3>
+                    <span style="font-family: 'Titillium Web', sans-serif;">Review your details and make sure you remember them. Further Steps has been mailed to you. <br>
+                    </span>
+                    <strong><h4>Payment ID: <?php echo $_POST['razorpay_payment_id'] = $_SESSION['payment_id'];?></h4><strong>
                 </div>
                 <form id="contact-form" class="contactus-form" method="GET" action="../pay/pay.php?checkout=automatic">
-                    <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
                         <h3>Basic Details</h3>
-                        <p>Details we need to recognise you!</p>
+                        <p>Details we needed to recognise you!</p>
+                        <hr>
                     </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <h4><b>Name:</b></h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <h4 id="name"><?php echo $name = $_SESSION['name1'];?></h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <h4><b>College Name:</b></h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <h4><?php echo $name = $_SESSION['college1'];?></h4>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <h4><b>Phone:</b></h4>                            
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <h4><?php echo $name = $_SESSION['phone1'];?></h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <h4><b>Email:</b></h4>                            
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <h4><?php echo $name = $_SESSION['email1'];?></h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <h4><b>Semester:</b></h4>                            
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <h4><?php echo $name = $_SESSION['sem1'];?></h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <h4><b>Branch:</b></h4>                            
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <h4><?php echo $name = $_SESSION['branch1'];?></h4>
+                        </div>
+                    </div>
+                    
+
                     <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="form-group">
-                            <input type="text" name="name" id="name" class="form-control" placeholder="Name*" required maxlength="30" />
-                        </div>
-                    </div>
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="form-group">
-                            <input type="text" name="college" class="form-control" id="college" placeholder="College Name" required maxlength="50" />
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="form-group">
-                            <input type="tel" name="phone" class="form-control" id="phone" placeholder="Phone" maxlength="10" required />
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="form-group">
-                            <input type="email" name="email" class="form-control" id="email" placeholder="Email" maxlength="30" required/>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="form-group">
-                            <select type="text" name="semester" class="form-control" id="semester" required>
-                                    <option value="Null">Choose Semester</option>
-                                    <option value="1">I</option>
-                                    <option value="2">II</option>
-                                    <option value="3">III</option>
-                                    <option value="4">IV</option>
-                                    <option value="5">V</option>
-                                    <option value="6">VI</option>
-                                    <option value="7">VII</option>
-                                    <option value="8">VIII</option>
-                                </select>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="form-group">
-                            <select type="text" name="branch" class="form-control" id="branch" required>
-                                    <option value="Null">Select Branch</option>
-                                    <option value="ECE">Electronics and Communication</option>
-                                    <option value="ISE">Information Science Engineering</option>
-                                    <option value="CSE">Computer Science Engineering</option>
-                                    <option value="EEE">Electrical and Electronics Engineering</option>
-                                    <option value="ME">Mechanical Engineering</option>
-                                    <option value="CVE">Civil Engineering</option>
-                                    <option value="TCE">Tele-Communication Engineering</option>
-                                    <option value="IM">Industrial Management</option>
-                                    <option value="Others">Others</option>
-                                </select>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-sm-6 col-xs-12">
                         <h3>Few More</h3>
-                        <p>Just few things we need to know about you</p>
+                        <p>Just few things we needed to know about you</p>
                     </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <h4><b>Purpose of Attending:</b></h4>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <h4><?php echo $name = $_SESSION['purpose1'];?></h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <h4><b>What you know about Developer Labs?</b></h4>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <h4><?php echo $name = $_SESSION['know1'];?></h4>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <h4><b>Twitter Username:</b></h4>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <h4><?php echo $name = $_SESSION['twitter1'];?></h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <h4><b>Linkedin URL:</b></h4>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <h4><?php echo $name = $_SESSION['linkedin1'];?></h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <h4><b>Hometown:</b></h4>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <h4><?php echo $name = $_SESSION['hometown1'];?></h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <h4><b>Interested Field:</b></h4>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <h4><?php echo $name = $_SESSION['field1'];?></h4>
+                        </div>
+                    </div>
+
                     <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="form-group">
-                            <textarea type="text" name="purpose" class="form-control" id="purpose" placeholder="Purpose of Attending (140 Characters Max)" required maxlength="140" required></textarea>
-                        </div>
-                    </div>
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="form-group">
-                            <textarea type="text" name="know" class="form-control" id="know" placeholder="What you know about Developer Labs? (140 Characters Max)" required maxlength="140" required></textarea>
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="form-group">
-                            <input type="text" name="twitter" class="form-control" id="twitter" placeholder="Twitter Username" />
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="form-group">
-                            <input type="url" name="linkedin" class="form-control" id="linkedin" placeholder="Linkedin URL" />
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="form-group">
-                            <input type="text" name="hometown" class="form-control" id="hometown" placeholder="Your Hometown" required/>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="form-group">
-                            <select type="text" name="field" class="form-control" id="field" required>
-                                    <option value="Null">Which field Interests you?</option>
-                                    <option value="IoT">Internet of Things (IoT)</option>
-                                    <option value="Robotics">Robotics</option>
-                                    <option value="AI">Artificial Inteligence</option>
-                                    <option value="Big Data">Big Data</option>
-                                    <option value="App Development">Mobile Aplication Development</option>
-                                    <option value="Web">Web Development</option>
-                                    <option value="Core">Core Programming</option>
-                                    <option value="Frameworks">Frameworks Development</option>
-                                    <option value="Others">Others</option>
-                                </select>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-sm-6 col-xs-12">
                         <h3>Final Step</h3>
-                        <p>Choose the options and get connected.</p>
+                        <p>Choosen options and get connected.</p>
                     </div>
-                    <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
                         <div class="form-group">
-                            <input type="text" name="learn" class="form-control" id="learn" placeholder="What you want to learn in our Dev Lab? (60 Characters Max)" required maxlength="60" />
+                            <h4><b>What you want to learn in our Dev Lab?</b></h4>
+                            
                         </div>
                     </div>
-                    <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
                         <div class="form-group">
-                            <input type="text" name="aboutus" class="form-control" id="aboutus" placeholder="How you came to know about us? (60 Characters Max)" required maxlength="60" />
+                            <h4><?php echo $name = $_SESSION['learn1'];?></h4>
                         </div>
                     </div>
-
-
-                    <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
                         <div class="form-group">
-                            <select type="text" name="lab" class="form-control" id="lab">
-                            <option value="Null">Choose the Lab</option>
-                            <option value="Web">Web Development Basics</option>
-                            <option value="Android">Android App Development Basics</option>
-                        </select>
+                            <h4><b>How you came to know about us?</b></h4>
+                            
                         </div>
                     </div>
-                    <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
                         <div class="form-group">
-                            <input type="submit" value="Register" title="Send" name="submit">
+                            <h4><?php echo $name = $_SESSION['aboutus1'];?></h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <h4><b>Choosen Lab</b></h4>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <h4><?php echo $name = $_SESSION['lab1'];?></h4>
                         </div>
                     </div>
                 </form>
@@ -471,9 +533,6 @@
         </div>
         <!-- Container /- -->
     </footer>
-
-    <input id="name1" />
-
     <!-- Firebase App Initialisation -->
     <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
     <script>
@@ -499,7 +558,6 @@
     <script src="libraries/lightslider-master/lightslider.js"></script>
 
     <script src="js/functions.js"></script>
-
+    
 </body>
-
 </html>

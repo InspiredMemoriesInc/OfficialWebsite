@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿<?php
+session_start();
+?>
+
+<!DOCTYPE html>
 <!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
 <!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
 <!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
@@ -11,9 +15,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Register For Dev Labs - InspiredMemories</title>
+    <meta name="description" content="IM Developer Labs is a technology workshop we conduct in colleges to educate them with the latest technology. We are proud to announce #IMDevLabs that will give every student who participate the confidence to grow and work on their dreams">
+    <meta name="author" content="InspiredMemories LLP">
+    <title>Payment Failed - #IMDevLabs</title>
 
     <!-- Favicons -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
@@ -130,7 +134,7 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a title="Logo" href="#" class="navbar-brand"><img src="images/logo.png" alt="logo" /><span>#IMDevlabs</span></a>
+                            <a title="Logo" href="#" class="navbar-brand"><img src="../images/imlogo.png" alt="logo" /><span>#IMDevlabs</span></a>
                         </div>
                         <div class="navbar-collapse collapse" id="navbar">
                             <ul class="nav navbar-nav menubar">
@@ -169,169 +173,11 @@
         <div class="row contact-form-section">
             <div class="col-md-8 col-sm-8">
                 <div class="section-header">
-                    <h3>Register for #IMDevLabs </h3>
-                    <span style="font-family: 'Titillium Web', sans-serif;">Note: Only one ticket can be registered at a time so please fill the form individually and let others to do so. </span>
+                    <h3>Payment for #IMDevLabs Failed</h3>
+                    <span style="font-family: 'Titillium Web', sans-serif;">Please retry with the other options or check your bank credentials. For any assistance call us +91 9742653096 or mail us on devlabs@inspiredmemories.in</span>
                 </div>
-                <form id="contact-form" class="contactus-form" method="GET" action="../pay/pay.php?checkout=automatic">
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <h3>Basic Details</h3>
-                        <p>Details we need to recognise you!</p>
-                    </div>
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="form-group">
-                            <input type="text" name="name" id="name" class="form-control" placeholder="Name*" required maxlength="30" />
-                        </div>
-                    </div>
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="form-group">
-                            <input type="text" name="college" class="form-control" id="college" placeholder="College Name" required maxlength="50" />
-                        </div>
-                    </div>
 
-
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="form-group">
-                            <input type="tel" name="phone" class="form-control" id="phone" placeholder="Phone" maxlength="10" required />
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="form-group">
-                            <input type="email" name="email" class="form-control" id="email" placeholder="Email" maxlength="30" required/>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="form-group">
-                            <select type="text" name="semester" class="form-control" id="semester" required>
-                                    <option value="Null">Choose Semester</option>
-                                    <option value="1">I</option>
-                                    <option value="2">II</option>
-                                    <option value="3">III</option>
-                                    <option value="4">IV</option>
-                                    <option value="5">V</option>
-                                    <option value="6">VI</option>
-                                    <option value="7">VII</option>
-                                    <option value="8">VIII</option>
-                                </select>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="form-group">
-                            <select type="text" name="branch" class="form-control" id="branch" required>
-                                    <option value="Null">Select Branch</option>
-                                    <option value="ECE">Electronics and Communication</option>
-                                    <option value="ISE">Information Science Engineering</option>
-                                    <option value="CSE">Computer Science Engineering</option>
-                                    <option value="EEE">Electrical and Electronics Engineering</option>
-                                    <option value="ME">Mechanical Engineering</option>
-                                    <option value="CVE">Civil Engineering</option>
-                                    <option value="TCE">Tele-Communication Engineering</option>
-                                    <option value="IM">Industrial Management</option>
-                                    <option value="Others">Others</option>
-                                </select>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <h3>Few More</h3>
-                        <p>Just few things we need to know about you</p>
-                    </div>
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="form-group">
-                            <textarea type="text" name="purpose" class="form-control" id="purpose" placeholder="Purpose of Attending (140 Characters Max)" required maxlength="140" required></textarea>
-                        </div>
-                    </div>
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="form-group">
-                            <textarea type="text" name="know" class="form-control" id="know" placeholder="What you know about Developer Labs? (140 Characters Max)" required maxlength="140" required></textarea>
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="form-group">
-                            <input type="text" name="twitter" class="form-control" id="twitter" placeholder="Twitter Username" />
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="form-group">
-                            <input type="url" name="linkedin" class="form-control" id="linkedin" placeholder="Linkedin URL" />
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="form-group">
-                            <input type="text" name="hometown" class="form-control" id="hometown" placeholder="Your Hometown" required/>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="form-group">
-                            <select type="text" name="field" class="form-control" id="field" required>
-                                    <option value="Null">Which field Interests you?</option>
-                                    <option value="IoT">Internet of Things (IoT)</option>
-                                    <option value="Robotics">Robotics</option>
-                                    <option value="AI">Artificial Inteligence</option>
-                                    <option value="Big Data">Big Data</option>
-                                    <option value="App Development">Mobile Aplication Development</option>
-                                    <option value="Web">Web Development</option>
-                                    <option value="Core">Core Programming</option>
-                                    <option value="Frameworks">Frameworks Development</option>
-                                    <option value="Others">Others</option>
-                                </select>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <h3>Final Step</h3>
-                        <p>Choose the options and get connected.</p>
-                    </div>
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="form-group">
-                            <input type="text" name="learn" class="form-control" id="learn" placeholder="What you want to learn in our Dev Lab? (60 Characters Max)" required maxlength="60" />
-                        </div>
-                    </div>
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="form-group">
-                            <input type="text" name="aboutus" class="form-control" id="aboutus" placeholder="How you came to know about us? (60 Characters Max)" required maxlength="60" />
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="form-group">
-                            <select type="text" name="lab" class="form-control" id="lab">
-                            <option value="Null">Choose the Lab</option>
-                            <option value="Web">Web Development Basics</option>
-                            <option value="Android">Android App Development Basics</option>
-                        </select>
-                        </div>
-                    </div>
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="form-group">
-                            <input type="submit" value="Register" title="Send" name="submit">
-                        </div>
-                    </div>
-                </form>
                 <div id="alert-msg" class="alert-msg"></div>
-            </div>
-            <div class="col-md-4 col-sm-4">
-                <div class="slider-content-box">
-                    <div class="col-md-12 col-sm-12 col-xs-6 no-padding">
-                        <h3 class="slider-title">Android Application Development For Beginners</h3>
-                        <span>February 14<sup>th</sup> and 15<sup>th</sup></span>
-                        <p>Seminar Hall 1 <br>Akshaya Institute of Technology <br> Tumkur - 572106 </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-4">
-                <div class="slider-content-box" style="background-color: #bdbdbd;">
-                    <div class="col-md-12 col-sm-12 col-xs-6 no-padding">
-                        <h3 class="slider-title">Learn the Web for Beginners</h3>
-                        <span>February 14<sup>th</sup> and 15<sup>th</sup></span>
-                        <p>Seminar Hall 2 <br>Akshaya Institute of Technology <br> Tumkur - 572106 </p>
-                    </div>
-
-                </div>
             </div>
         </div>
     </div>
@@ -503,3 +349,6 @@
 </body>
 
 </html>
+<?php
+session_destroy();
+?>

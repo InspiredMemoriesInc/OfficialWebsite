@@ -41,12 +41,14 @@ if ($success === true)
     $_SESSION['payment_id'] = $_POST['razorpay_payment_id'];
     $html = "<p>Your payment was successful</p>
              <p>Payment ID: {$_POST['razorpay_payment_id']}</p>";
+
+    echo "<meta http-equiv='refresh' content='0;url=success.php'>";
 }
 else
 {
-    $html = "<p>Your payment failed</p>
-             <p>{$error}</p>";
+    echo "<meta http-equiv='refresh' content='0;url=../devlabs/failed.php'>";
 }
 
 echo $html;
-echo "<meta http-equiv='refresh' content='0;url=success.php'>";
+
+
