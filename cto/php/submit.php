@@ -3,7 +3,7 @@
 
 // specify your email here
 
-$to = 'email@example.com';
+$to = 'harithsa@inspiredmemories.in';
 
 
 
@@ -15,7 +15,7 @@ $to = 'email@example.com';
     if (isset($_POST['message'])) { $message = $_POST['message']; }
 	
 	// Construct subject of the email
-	$subject = 'Medikal Contact Iquery ' . $name;
+	$subject = 'Message for you from Your Website by ' . $name;
 
 	// Construct email body
 	$body_message .= 'Name: ' . $name . "\r\n";
