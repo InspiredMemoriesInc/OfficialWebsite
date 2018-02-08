@@ -315,7 +315,7 @@ mail($to, $subject, $message, $headers);
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-12">
                         <div class="form-group">
-                            <h4><b>Hometown:</b></h4>
+                            <h4><b>T-Shirt Size:</b></h4>
                             
                         </div>
                     </div>
