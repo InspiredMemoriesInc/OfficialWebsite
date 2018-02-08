@@ -417,94 +417,15 @@ mail($to, $subject, $message, $headers);
                         with some surprises.</p>
                 </div>
             </div>
-
-            <div class="row">
-                <!-- Customer Service Widget -->
-                <aside class="col-md-3 col-sm-6 col-xs-6 widget widget_customer_services">
-                    <h3 class="block-title">Customer services</h3>
-                    <ul>
-                        <li><a title="Online Earning" href="#">Online Earning</a></li>
-                        <li><a title="Materials" href="#">Materials</a></li>
-                        <li><a title="Presentation" href="#">Presentation</a></li>
-                        <li><a title="Printed materials" href="#">Printed materials</a></li>
-                        <li><a title="Curriculum" href="#">curriculum</a></li>
-                        <li><a title="Literature" href="#">literature</a></li>
-                        <li><a title="Help & Faq" href="#">Help & Faq</a></li>
-                    </ul>
-                </aside>
-                <!-- Customer Service Widget /- -->
-
-                <!-- Quick Links Widget -->
-                <aside class="col-md-2 col-sm-6 col-xs-6 widget widget_quick_links">
-                    <h3 class="block-title">Quick links</h3>
-                    <ul>
-                        <li><a title="Faq" href="#">Faq</a></li>
-                        <li><a title="Support" href="#">Support</a></li>
-                        <li><a title="Sitemap" href="#">Sitemap</a></li>
-                        <li><a title="Community" href="#">Community</a></li>
-                        <li><a title="membership" href="#">membership</a></li>
-                        <li><a title="Events" href="eventlist-page.html">Events</a></li>
-                        <li><a title="Contact us" href="contactus.html">Contact us</a></li>
-                    </ul>
-                </aside>
-                <!-- Quick Links Widget /- -->
-
-                <!-- ContactUs Widget -->
-                <aside class="col-md-3 col-sm-6 col-xs-6 widget widget_contactus">
-                    <h3 class="block-title">Contact Us</h3>
-                    <div class="contactinfo-box">
-                        <i class="fa fa-map-marker"></i>
-                        <p>09 Design Street, Mitri, Victoria, Australia.</p>
-                    </div>
-                    <div class="contactinfo-box">
-                        <i class="fa fa-phone"></i>
-                        <p>
-                            <a title="0112345678" href="tel:+0112345678">+01 123 456 78</a>
-                            <a title="0112355689" href="tel:+0112355689">+01 123 556 89</a>
-                        </p>
-                    </div>
-                    <div class="contactinfo-box">
-                        <i class="fa fa-map-marker"></i>
-                        <p>
-                            <a href="mailto:Info@OurDomain.Com" title="Info@OurDomain.Com">Info@OurDomain.Com</a>
-                            <a href="mailto:Support@OurDomain.Com" title="Support@OurDomain.Com">Support@OurDomain.Com</a>
-                        </p>
-                    </div>
-                </aside>
-                <!-- ContactUs Widget /- -->
-
-                <!-- NewsLetter Widget -->
-                <aside class="col-md-4 col-sm-6 col-xs-6 widget widget_newsletter">
-                    <h3 class="block-title">News Letter</h3>
-                    <p>Got a dream and we just know now we're gonna make our dream come true</p>
-                    <div class="input-group">
-                        <input type="text" placeholder="Enter Address" class="form-control">
-                        <span class="input-group-btn">
-                                    <button type="button" title="Subscribe" class="btn">Go</button>
-                                </span>
-                    </div>
-                    <ul>
-                        <li><a title="Facebook" data-toggle="tooltip" href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a title="Twitter" data-toggle="tooltip" href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a title="Google Plus" data-toggle="tooltip" href="#"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a title="Linkedin" data-toggle="tooltip" href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a title="Pinterest" data-toggle="tooltip" href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                        <li><a title="Dribbble" data-toggle="tooltip" href="#"><i class="fa fa-dribbble"></i></a></li>
-                    </ul>
-                </aside>
-                <!-- NewsLetter Widget /- -->
             </div>
-        </div>
-        <!-- Container /- -->
-        <!-- Footer About /- -->
 
 
-        <!-- Container -->
+
         <div class="container">
             <div class="footer-menu">
                 <!-- Copyrights -->
                 <div class="copyrights ow-pull-left">
-                    <p>&copy; 2016 | All rights reserved</p>
+                    <p>&copy; 2018 InspiredMemories LLP - All Rights Reserved</p>
                 </div>
                 <!-- Copyrights /- -->
                 <!-- Navigation -->
@@ -518,12 +439,13 @@ mail($to, $subject, $message, $headers);
                         </button>
                     </div>
                     <div class="navbar-collapse collapse" id="navbar2">
-                        <ul class="nav navbar-nav">
-                            <li><a title="Home" href="index.html">Home</a></li>
-                            <li><a title="About Us" href="about-page.html">About Us</a></li>
-                            <li><a title="Services" href="services-page.html">Services</a></li>
-                            <li><a title="Latest News" href="blog-page.html">Latest News</a></li>
-                            <li><a title="Contact Us" href="contactus.html">Contact Us</a></li>
+                        <ul class="nav navbar-nav menubar">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="register.html">Check Events</a></li>
+                            <li><a href="../inspiredminds/index.html">Minds</a></li>
+                            <li><a href="../careers/index.html">Careers</a></li>
+                            <li><a href="../foundation/index.html">Foundation</a></li>
+                            <li><a href="../imstudios/launchpad/">Launchpad</a></li>
                         </ul>
                     </div>
                 </nav>
