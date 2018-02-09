@@ -58,13 +58,20 @@
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-  <script src="js/ie/respond.min.js"></script>
-  <![endif]-->
-
+    <script src="js/ie/respond.min.js"></script>
+    <![endif]-->
     <!-- Modernizr -->
     <script src="js/modernizr.min.js"></script>
     <!-- Subtle Loading bar -->
     <script src="js/plugins/pace.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700" rel="stylesheet">
+    <style>
+        h1, h2, h3, h4, h5, h6, p, div, body, a, li {
+            font-family: 'Titillium Web', sans-serif;
+        }
+    </style>
+
 </head>
 
 <body class="animate-page" data-spy="scroll" data-target="#navbar" data-offset="100">
@@ -81,18 +88,59 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img src="images/event-logo-dark.png" alt="Gather"> </a>
+                <a class="navbar-brand" href="#"><img src="images/event-logo-dark.png" alt="IM Logo"> </a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
 
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="#top">Home</a></li>
-                    <li><a href="inspiredminds/index.html">Inspired Minds</a></li>
-                    <li><a href="imstage/index.html">IM Stage</a></li>
-
-                    <li><a href="imstudios/index.html">IM Studios</a></li>
-                    <li><a href="impulse/index.html" class="hidden-sm">Impulse</a></li>
-                    <li><a href="foundation/index.html">IM Foundation</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Navigate <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="imhome/index.html">IM Technologies</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">InspiredMinds</li>
+                            <li><a href="inspiredminds/index.html">Minds</a></li>
+                            <li><a href="inspiredminds/club/index.html">Minds Club</a></li>
+                            <li><a href="inspiredminds/workspace/index.html">Workspace</a></li>
+                            <li><a href="inspiredminds/workshops/index.html">Workshops</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">IM Studios</li>
+                            <li><a href="imstudios/index.html">Studios</a></li>
+                            <li><a href="imstudios/launchpad/index.html">Launchpad</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Programs</li>
+                            <li><a href="imstage/index.html">IM Stage</a></li>
+                            <li><a href="foundation/index.html">Foundation</a></li>
+                            <li><a href="impulse/index.html">Impulse</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Impulse</li>
+                            <li><a href="primes/index.html">Primes 2017</a></li>
+                            <li><a href="devlabs/index.html">Developer Labs</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Legal <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Terms</li>
+                            <li><a href="terms.html">Terms and Conditions</a></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="refund.html">Refund Policy</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Founders</li>
+                            <li><a href="ceo/index.html">CEO</a></li>
+                            <li><a href="cto/index.html">CTO</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Latest Events <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="primes/index.html">Primes 2017</a></li>
+                            <li><a href="devlabs/index.html">Developer Labs</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="careers/index.html">Careers</a></li>
                 </ul>
             </div>
             <!--/.nav-collapse -->
@@ -279,16 +327,10 @@
                             </div>
                             <!-- timeline-bullet -->
 
-
                         </div>
                         <!-- timeline-block -->
-
-
-
                     </section>
                     <!-- timeline -->
-
-
                     <!-- ########### End Schedule Timeline  DAY 01  ########### -->
 
                 </div>
